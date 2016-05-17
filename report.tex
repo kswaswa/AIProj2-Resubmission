@@ -1,0 +1,30 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+\usepackage{lipsum} %This package just generates Lorem Ipsum filler text. 
+\usepackage{fullpage} % changes the margin
+
+\begin{document}
+%Header-Make sure you update this information!!!!
+\noindent
+\large\textbf{Project 2 Report} \hfill \textbf{Katie Swanson} \\
+\normalsize CMSC 471 \hfill Teammates: Katie Dillon\\
+Prof. Max \hfill (worked next to them, got some googled pages with code snippets from them) \\
+ \hfill Redo Due Date: 05/18/16
+
+\section*{Project 2}
+For project 2 we had to write our own program to use hill climbing, hill climbing with random restarts, and simulated annealing to see which technique finds the minimum of the graph the quickest. You can tell this because we graph each function and each technique's path to finding the minimum. The less points it takes to find the minimum, the more efficient the path is.
+
+\section*{Which Did Better}
+Hill Climbing
+
+\section*{Which Took Longer}
+Simulated Annealing ( I had to change the graphing limit to 100 instead of 1000 to give it a reasonable graphing time )
+
+\section*{Why I think This Is}
+I think the Hill Climbing is a better algorithm than the other two. The random restarts should make the algorithm less efficient because, instead of starting x, y, and z at the highest spot until you're at a local minima, you start over at a random spot, and it is less likely that that random spot will be better or a local minima than the calculated out new x, y, and z point. I think the Simulated Annealing algorithm is trying to change the z at random times, and optimize the function using the old z vs the new z, and it just seems a little too complicated, and the Hill Climbing algorithm seems very efficient and ideal for what we are trying to do here. It gets right to the point and solves the problem at hand quickly.
+
+\begin{thebibliography}{9}
+\bibitem{Simulated Annealing }http://katrinaeg.com/simulated-annealing.html (partially)
+\end{thebibliography}
+
+\end{document}
